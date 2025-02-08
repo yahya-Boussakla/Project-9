@@ -1,0 +1,32 @@
+{
+    "admin": [
+        {
+            "admin": "hamoda",
+            "password": "admin"
+        }
+    ],
+    "users": [
+        {
+            "id": 1,
+            "name": "test",
+            "lastName": "test",
+            "email": "test",
+            "birthday": "2025-03-08",
+            "userName": "test",
+            "password": "test",
+            "signUpDate": "2025-02-08 02:43:49pm",
+            "logInDate": "2025-02-08 03:13:09pm"
+        },
+        {
+            "id": 2,
+            "name": "test1",
+            "lastName": "test2",
+            "email": "test1",
+            "birthday": "2025-02-22",
+            "userName": "test1",
+            "password": "test1",
+            "signUpDate": "2025-02-08 03:07:48pm",
+            "logInDate": "2025-02-08 03:13:34pm"
+        }
+    ]
+}

@@ -1,0 +1,59 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url(bg.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+form h1{
+    color: white;
+    margin-bottom: 5%;
+    font-size: 120%;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+form{
+    padding: 3% 6%;
+    width: 30%;
+    background: rgba(255, 255, 255, 0.12);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7.8px);
+    -webkit-backdrop-filter: blur(7.8px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+input{
+    width: 100%;
+    text-align: center;
+    color: white;
+    margin-block: 9%;
+    border: none;
+    height: 30px;
+    background-color: transparent;
+    border-bottom: 1px solid white;
+}
+input[type="submit"]{
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 9%;
+    text-align: center;
+    background: rgb(190,36,100);
+    color: white;
+    background: linear-gradient(90deg, rgba(190,36,100,1) 0%, rgba(99,32,54,1) 50%, rgba(45,75,200,1) 100%); 
+    font-size: 100%;
+    font-weight: 700;
+}
+form .poooo{
+    text-align: center;
+    color: red;
+}
