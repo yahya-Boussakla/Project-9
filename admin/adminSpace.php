@@ -1,9 +1,9 @@
     <?php
     session_start();
     if (!isset($_SESSION["admin"])) {
-        header("Location: index.php");
+        header("Location: ../index.php");
     }
-    $inp = file_get_contents('users.json');
+    $inp = file_get_contents('../db/users.json');
     $tempArray = json_decode($inp,true);
     session_destroy();
     ?>

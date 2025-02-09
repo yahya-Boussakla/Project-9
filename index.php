@@ -5,13 +5,13 @@
 session_start();
 
 if (isset($_SESSION["id"])) {
-    header('Location: userSpace.php');
+    header('Location: /user/userSpace.php');
 }
 $GLOBALS["message"] = "";
 global $tempArray;
 global $user;
 global $existe;
-$inp = file_get_contents('users.json');
+$inp = file_get_contents('db/users.json');
 $tempArray = json_decode($inp,true);
 $existe = false;
 
@@ -67,9 +67,9 @@ function pushData($user, $tempArray){
 
     array_push($tempArray["users"], $user);
     $jsonData = json_encode($tempArray, JSON_PRETTY_PRINT);
-    file_put_contents('users.json', $jsonData);
+    file_put_contents('db/users.json', $jsonData);
     $_SESSION["id"] = $user->id;
-    header('Location: userSpace.php');
+    header('Location: /user/userSpace.php');
     exit;
 }
 
@@ -91,14 +91,14 @@ function failedSignUp($user, $tempArray, $existe){
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/login/style.css">
     <title>Your Space</title>
 </head>
 <body>
 <form method="post" action="">
         <div class="title">
             <h1>Sign Up</h1>
-            <h3>Already Have an Account? <a href="login.php"> login</a></h3>
+            <h3>Already Have an Account? <a href="/login/login.php"> login</a></h3>
         </div>
         <hr>
         <div class="row">

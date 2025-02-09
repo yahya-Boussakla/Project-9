@@ -2,12 +2,12 @@
         session_start();
         
         if (isset($_SESSION["id"])) {
-            header('Location: userSpace.php');
+            header('Location: ../user/userSpace.php');
         }
         $GLOBALS["messag"]="";
         global $tempArray;
         global $user;
-        $inp = file_get_contents('users.json');
+        $inp = file_get_contents('../db/users.json');
         $tempArray = json_decode($inp,true);
         $existe = false;
         $sucsses = false;
@@ -60,7 +60,7 @@
                 if (($admin["admin"] === $_POST['username'] )&& $admin["password"] === $_POST['Password']) {
                  $sucsses = true;
                  $_SESSION["admin"] = true;
-                 header('Location: adminSpace.php');
+                 header('Location: ../admin/adminSpace.php');
                  exit;
                 }
             }
@@ -76,7 +76,7 @@
                  $tempArray['users'][$users["id"]-1]['logInDate'] = date("Y-m-d h:i:sa");
                  $jsonData = json_encode($tempArray, JSON_PRETTY_PRINT);
                  file_put_contents('users.json', $jsonData);
-                 header('Location: userSpace.php');
+                 header('Location: ../user/userSpace.php');
                  exit;
                 }
             }

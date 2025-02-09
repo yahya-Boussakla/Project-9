@@ -15,7 +15,7 @@
             "userName": "test",
             "password": "test",
             "signUpDate": "2025-02-08 02:43:49pm",
-            "logInDate": "2025-02-08 03:13:09pm"
+            "logInDate": "2025-02-09 03:19:39pm"
         },
         {
             "id": 2,
@@ -30,13 +30,13 @@
         },
         {
             "id": 3,
-            "name": "yje",
-            "lastName": "tr",
+            "name": "ut",
+            "lastName": "luit",
             "email": "test2",
-            "birthday": "2025-02-21",
-            "userName": "ykut",
+            "birthday": "2025-02-15",
+            "userName": "test2",
             "password": "test2",
-            "signUpDate": "2025-02-09 03:24:48pm",
+            "signUpDate": "2025-02-09 03:05:33pm",
             "logInDate": null
         }
     ]

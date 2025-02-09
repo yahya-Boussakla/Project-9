@@ -4,7 +4,7 @@
     padding: 0;
 }
 body{
-    background-image: url(bg.jpg);
+    background-image: url(/images/bg.jpg);
     background-attachment: fixed;
     background-size: cover;
     display: flex;
@@ -14,46 +14,16 @@ body{
 }
 form h1{
     color: white;
+    margin-bottom: 5%;
     font-size: 120%;
     font-weight: 700;
-    text-align: start;
+    text-align: center;
     text-transform: uppercase;
     font-weight: 700;
 }
-form hr{
-    width: 100%;
-    color: white;
-    height: 2px;
-    margin-bottom: 2%;
-
-}
-form h3{
-    font-size: 90%;
-    color: white;
-}
-.row{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-.column1  {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-}
-a{
-    text-decoration: none;
-    color: rgb(30, 30, 202);
-}
-.title{
-    display: flex;
-    margin-bottom: 3%;
-    flex-direction: row;
-    justify-content: space-between;
-}
 form{
     padding: 3% 6%;
-    width: 65%;
+    width: 30%;
     background: rgba(255, 255, 255, 0.12);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -62,15 +32,20 @@ form{
     border: 1px solid rgba(255, 255, 255, 0.2);
 }
 input{
-    width: 95%;
-    text-align: start;
+    width: 100%;
+    text-align: center;
+    color: white;
+    margin-block: 9%;
     border: none;
-    border-radius: 5px;
     height: 30px;
+    background-color: transparent;
+    border-bottom: 1px solid white;
 }
 input[type="submit"]{
+    border: none;
+    border-radius: 5px;
     cursor: pointer;
-    margin-top: 3%;
+    margin-top: 9%;
     text-align: center;
     background: rgb(190,36,100);
     color: white;
@@ -78,14 +53,7 @@ input[type="submit"]{
     font-size: 100%;
     font-weight: 700;
 }
-label{
-    color: white;
-    margin-top: 5%;
-}
-.error{
+form .poooo{
     text-align: center;
     color: red;
-}
-.test{
-    margin-right: 4%;
 }

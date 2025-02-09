@@ -1,10 +1,10 @@
 <?php
     session_start();
     if (!isset($_SESSION["id"])) {
-        header("Location: index.php");
+        header("Location: ../index.php");
     }
     $id = $_SESSION["id"] - 1;
-    $inp = file_get_contents('users.json');
+    $inp = file_get_contents('../db/users.json');
     $tempArr = json_decode($inp ,true);
     $GLOBALS["name"] = $tempArr['users'][$id]["name"];
     $GLOBALS["lastName"] = $tempArr['users'][$id]["lastName"];
@@ -16,7 +16,7 @@
     $GLOBALS["signup"] = $tempArr['users'][$id]["signUpDate"];
     if (array_key_exists('logOut', $_POST)) {
         session_destroy();
-        header('Location: index.php');
+        header('Location: ../index.php');
         exit;
     }
     ?>
@@ -49,7 +49,7 @@
             <p><b>your password : </b><?php echo $GLOBALS["password"]; ?></p>
             <p><b>your signup date : </b><?php echo $GLOBALS["signup"]; ?></p>
         </div>
-        <img src="dessin.png" alt="">
+        <img src="../images/dessin.png" alt="">
     </section>
     <script src="https://kit.fontawesome.com/6e2f9a7b88.js" crossorigin="anonymous"></script>
 </body>
