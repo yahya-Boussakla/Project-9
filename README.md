@@ -25,7 +25,7 @@ This is a simple user management system built with PHP. It includes authenticati
 ## Installation  
 1. **Clone the repository**  
    ```sh
-   git clone https://github.com/your-profile/user-management-json.git
+   git clone https://github.com/yahya-Boussakla/Project-9.git
    ```  
 2. **Start a local server** (Apache with PHP enabled)  
    ```sh
